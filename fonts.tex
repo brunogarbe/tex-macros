@@ -1,0 +1,114 @@
+% *******************************************************************
+% Text Fonts
+
+\def\setTextFont#1#2{
+\font\TextFont="#1" at #2
+\font\TextFontBold="#1/B" at #2
+\font\TextFontItalic="#1/I" at #2
+\font\TextFontBoldItalic="#1/BI" at #2
+\TextFont
+}
+
+% Bold and italic
+\def\rm#1{\bgroup\TextFont#1\egroup}
+\def\it#1{\bgroup\TextFontItalic#1\egroup}
+\def\bf#1{\bgroup\TextFontBold#1\egroup}
+\def\bi#1{\bgroup\TextFontBoldItalic#1\egroup}
+
+
+% *******************************************************************
+% Math Fonts
+
+% Roman math text font
+\def\setMathFontZero#1#2#3#4#5{
+\font\MFTextZero="#2" at #3
+\font\MFScriptZero="#2" at #4
+\font\MFScriptScriptZero="#2" at #5
+\textfont#1=\MFTextZero
+\scriptfont#1=\MFScriptZero
+\scriptscriptfont#1=\MFScriptScriptZero
+}
+
+% Italic math text font
+\def\setMathFontOne#1#2#3#4#5{
+\font\MFTextOne="#2" at #3
+\font\MFScriptOne="#2" at #4
+\font\MFScriptScriptOne="#2" at #5
+\textfont#1=\MFTextOne
+\scriptfont#1=\MFScriptOne
+\scriptscriptfont#1=\MFScriptScriptOne
+}
+
+% Bold math text font
+\def\setMathFontSix#1#2#3#4#5{
+\font\MFTextSix="#2/B" at #3
+\font\MFScriptSix="#2/B" at #4
+\font\MFScriptScriptSix="#2/B" at #5
+\textfont#1=\MFTextSix
+\scriptfont#1=\MFScriptSix
+\scriptscriptfont#1=\MFScriptScriptSix
+}
+
+
+% Bold italic math text font
+\def\setMathFontFifteen#1#2#3#4#5{
+\font\MFTextFifteen="#2/BI" at #3
+\font\MFScriptFifteen="#2/BI" at #4
+\font\MFScriptScriptFifteen="#2/BI" at #5
+\textfont#1=\MFTextFifteen
+\scriptfont#1=\MFScriptFifteen
+\scriptscriptfont#1=\MFScriptScriptFifteen
+}
+
+
+\def\setMathFont#1#2#3#4{
+% Roman math text font
+\font\MFTextZero="#1" at #2
+\font\MFScriptZero="#1" at #3
+\font\MFScriptScriptZero="#1" at #4
+\textfont0=\MFTextZero
+\scriptfont0=\MFScriptZero
+\scriptscriptfont0=\MFScriptScriptZero
+
+% Italic math text font
+\font\MFTextOne="#1/I" at #2
+\font\MFScriptOne="#1/I" at #3
+\font\MFScriptScriptOne="#1/I" at #4
+\textfont1=\MFTextOne
+\scriptfont1=\MFScriptOne
+\scriptscriptfont1=\MFScriptScriptOne
+
+% Bold math text font
+\font\MFTextSix="#1/B" at #2
+\font\MFScriptSix="#1/B" at #3
+\font\MFScriptScriptSix="#1/B" at #4
+\textfont6=\MFTextSix
+\scriptfont6=\MFScriptSix
+\scriptscriptfont6=\MFScriptScriptSix
+
+% Bold italic math text font
+\font\MFTextFifteen="#1/BI" at #2
+\font\MFScriptFifteen="#1/BI" at #3
+\font\MFScriptScriptFifteen="#1/BI" at #4
+\textfont15=\MFTextFifteen
+\scriptfont15=\MFScriptFifteen
+\scriptscriptfont15=\MFScriptScriptFifteen
+}
+
+\def\setExtraMathFont#1#2#3#4{
+% eXTRA
+\font\MFTextSixteen="#1" at #2
+\font\MFScriptSixteen="#1" at #3
+\font\MFScriptScriptSixteen="#1" at #4
+\textfont2=\MFTextSixteen
+\scriptfont2=\MFScriptSixteen
+\scriptscriptfont2=\MFScriptScriptSixteen
+}
+
+% Bold and Italic
+\def\mathrm{\fam0}
+\def\mathit{\fam1}
+\def\mathbf{\fam6}
+\def\mathbi{\fam15}
+
+

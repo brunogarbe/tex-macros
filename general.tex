@@ -1,0 +1,28 @@
+\input tex_macros/fonts.tex
+\input tex_macros/math.tex
+\input tex_macros/mathsymbols.tex
+
+% *******************************************************************
+% Preconfigured fonts
+
+% Times New Roman
+\def\setTimesNewRoman{
+\setTextFont{XITS}{16pt}
+%\setMathFont{XITS}{16pt}{13pt}{10pt}
+\setMathFontZero{\MathRoman}{XITS}{16pt}{13pt}{10pt}
+\setMathFontOne{\MathItalic}{XITS/I}{16pt}{13pt}{10pt}
+\setMathFontSix{\MathBold}{XITS/B}{16pt}{13pt}{10pt}
+\setMathFontFifteen{\MathBoldItalic}{XITS/BI}{16pt}{13pt}{10pt}
+\setGreekLetters{\MathItalic}
+}
+
+% Palatino
+\def\setPalatino{
+\setTextFont{TeX Gyre Pagella}{16pt}
+%\setMathFont{TG Pagella Math}{16pt}{13pt}{10pt}
+\setMathFontZero{\MathRoman}{PazoMath Nova}{16pt}{13pt}{10pt}
+\setMathFontOne{\MathItalic}{PazoMath Nova/I}{16pt}{13pt}{10pt}
+\setMathFontSix{\MathBold}{PazoMath Nova/B}{16pt}{13pt}{10pt}
+\setMathFontFifteen{\MathBoldItalic}{PazoMath Nova/BI}{16pt}{13pt}{10pt}
+\setGreekLetters{\MathItalic}
+}

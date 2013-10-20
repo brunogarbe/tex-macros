@@ -1,0 +1,26 @@
+% *******************************************************************
+% Math
+
+﻿% Define macros auxiliares para os caracteres matematicos
+\def\MathOrd{"0}
+\def\MathOp{"1}
+\def\MathBin{"2}
+\def\MathRel{"3}
+\def\MathOpen{"4}
+\def\MathClose{"5}
+\def\MathPunct{"6}
+\def\MathAlpha{"7}
+
+\def\MathRoman{"0}
+\def\MathItalic{"1}
+\def\MathBold{"6}
+\def\MathBsym{"B}
+\def\MathBsymTwo{"C}
+\def\MathBoldItalic{"F}
+
+\def\setMathUpperLatinLetters#1
+{%
+\XeTeXmathcode"30=\MathOrd#1"30
+\XeTeXmathcode"31=\MathOrd#1"31
+}
+
