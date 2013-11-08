@@ -1,18 +1,19 @@
-\input tex_macros/fonts.tex
-\input tex_macros/math.tex
-\input tex_macros/mathsymbols.tex
+\input tex-macros/fonts.tex
+\input tex-macros/sections.tex
+\input tex-macros/math.tex
+\input tex-macros/mathsymbols.tex
 
 % *******************************************************************
 % Preconfigured fonts
 
 % Times New Roman
-\def\setTimesNewRoman{
-\setTextFont{XITS}{16pt}
+\def\setTimesNewRoman#1#2#3{
+\setTextFont{XITS}{#1}
 %\setMathFont{XITS}{16pt}{13pt}{10pt}
-\setMathFontZero{\MathRoman}{XITS}{16pt}{13pt}{10pt}
-\setMathFontOne{\MathItalic}{XITS/I}{16pt}{13pt}{10pt}
-\setMathFontSix{\MathBold}{XITS/B}{16pt}{13pt}{10pt}
-\setMathFontFifteen{\MathBoldItalic}{XITS/BI}{16pt}{13pt}{10pt}
+\setMathFontZero{\MathRoman}{XITS}{#1}{#2}{#3}
+\setMathFontOne{\MathItalic}{XITS/I}{#1}{#2}{#3}
+\setMathFontSix{\MathBold}{XITS/B}{#1}{#2}{#3}
+\setMathFontFifteen{\MathBoldItalic}{XITS/BI}{#1}{#2}{#3}
 \setGreekLetters{\MathItalic}
 }
 
